@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="main">
+        <!-- Prediction Result Section -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    
+                    <!-- Image Section -->
+                    <div class="signin-image">
+                        <figure>
+                            <img 
+                                src="{{ url_for('static', filename='images/signin-image.jpg') }}" 
+                                alt="Prediction Illustration"
+                                style="width: 100%; max-width: 450px; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: block; margin: 0 auto;"
+                            >
+                            <figcaption style="text-align: center; font-style: italic; margin-top: 10px;">
+                                XGBoost-powered loan decision
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Result Display Section -->
+                    <div class="signin-form">
+                        <h2 class="form-title">Prediction Result</h2>
+                        
+                        <p class="text">
+                            Estimated model accuracy: <strong>90%</strong>
+                        </p>
+                        <br>
+                        <div class="text" style="font-size: 18px; font-weight: bold;">
+                            {{ prediction | safe }}
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <a href="{{ url_for('home') }}" class="form-submit">← Back to Home</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
