@@ -1,5 +1,5 @@
-# Loan_Approval_Prediction![Screenshot (86)](https://github.com/user-attachments/assets/42fb2387-a550-4255-9cb9-052e7aed94d5)
-![Screenshot (85)](https://github.com/user-attachments/assets/444c02d9-475f-47a2-83de-af40115866bd)
+![Screenshot (89)](https://github.com/user-attachments/assets/6d65b6f8-89ed-4a66-ab07-106e1ad876aa)
+![Screenshot (90)](https://github.com/user-attachments/assets/2431b578-d12c-4f3f-aa88-4b5991e7f463)
 🛠️ Technologies & Languages Likely Used
 Frontend
 HTML5 – For structuring the form and result page.
